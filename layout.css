@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.heading {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.root {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  padding: 1em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 340px;
+}
+
+.logo {
+  height: 60px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.button {
+  width: 100%;
+  border: 0;
+  padding: 10px;
+}

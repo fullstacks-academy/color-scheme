@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Color Scheme</title>
-  <style>
-    :root {
-      color-scheme: light dark;
-    }
-  </style>
-</head>
-<body>
-  <h1>Fullstacks Academy</h1>
-  <input type="text" placeholder="Your name...">
-  <progress></progress>
-  <button>Login</button>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <title>Color Scheme</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./layout.css" />
+  </head>
+
+  <body>
+    <div class="root">
+      <div class="card">
+        <svg class="logo" viewBox="0 0 54 73">
+          <path
+            d="M27.327 0L.654 46.26l26.673 26.483L54 46.261 27.327 0zm0 58.714L13.295 44.553 27.327 20.28l13.905 24.272-13.905 14.16z"
+          />
+        </svg>
+
+        <h1 class="heading">Fullstacks Academy</h1>
+        <input class="input" type="text" placeholder="Your name..." />
+        <button class="button">Login</button>
+      </div>
+    </div>
+  </body>
 </html>
