@@ -1,0 +1,26 @@
+.root {
+  background-color: var(--bg);
+  transition: var(--color-transition);
+}
+
+.card {
+  background-color: var(--bg-level-1);
+  transition: var(--color-transition);
+  color: var(--fg);
+}
+
+.logo {
+  fill: currentColor;
+}
+
+.input {
+  background-color: var(--input-bg);
+  transition: background-color 300ms, color 300ms;
+  color: inherit;
+}
+
+.button {
+  color: var(--button-fg);
+  background-color: var(--button-bg);
+  transition: background-color 300ms, color 300ms;
+}

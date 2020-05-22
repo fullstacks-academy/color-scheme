@@ -9,10 +9,13 @@
       href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./dark.css" />
+    <link rel="stylesheet" href="./light.css" />
     <link rel="stylesheet" href="./layout.css" />
+    <link rel="stylesheet" href="./colors.css" />
   </head>
 
-  <body>
+  <body data-scheme="default">
     <div class="root">
       <div class="card">
         <svg class="logo" viewBox="0 0 54 73">
@@ -22,9 +25,36 @@
         </svg>
 
         <h1 class="heading">Fullstacks Academy</h1>
+        <select class="input" name="color" id="color">
+          <option value="default">Default</option>
+          <option value="dark">Dark</option>
+          <option value="light">Light</option>
+        </select>
         <input class="input" type="text" placeholder="Your name..." />
         <button class="button">Login</button>
       </div>
+
+      <script>
+        const selectEl = document.getElementById("color");
+        function getPrefersColorScheme() {
+          const isLightPrefers = window.matchMedia(
+            "(prefers-color-scheme: light)"
+          ).matches;
+          return isLightPrefers ? "light" : "dark";
+        }
+
+        function onSchemeChanged(e) {
+          const value = e.target.value;
+          if (value === "default") {
+            document.body.dataset.scheme = getPrefersColorScheme();
+          } else {
+            document.body.dataset.scheme = value;
+          }
+        }
+
+        document.body.dataset.scheme = getPrefersColorScheme();
+        selectEl.addEventListener("input", onSchemeChanged);
+      </script>
     </div>
   </body>
 </html>
