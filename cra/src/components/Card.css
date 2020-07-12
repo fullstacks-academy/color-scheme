@@ -1,0 +1,11 @@
+.card {
+  padding: 1em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 340px;
+
+  background-color: var(--bg-level-1);
+  transition: var(--color-transition);
+  color: var(--fg);
+}

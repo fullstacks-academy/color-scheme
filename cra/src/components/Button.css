@@ -1,0 +1,9 @@
+.button {
+  width: 100%;
+  border: 0;
+  padding: 10px;
+
+  color: var(--button-fg);
+  background-color: var(--button-bg);
+  transition: background-color 300ms, color 300ms;
+}
