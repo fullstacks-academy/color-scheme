@@ -1,6 +1,6 @@
 import React from "react";
-import "./Heading.css";
+import styles from "./Heading.module.css";
 
-const Heading = (props) => <h1 className="heading" {...props} />;
+const Heading = (props) => <h1 className={styles.heading} {...props} />;
 
 export default Heading;

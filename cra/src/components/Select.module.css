@@ -1,0 +1,10 @@
+.select {
+  background-color: var(--input-bg);
+  transition: background-color 300ms, color 300ms;
+  color: inherit;
+
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  margin-bottom: 20px;
+}

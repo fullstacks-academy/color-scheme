@@ -1,6 +1,6 @@
 import React from "react";
-import './Option.css'
+import styles from './Option.module.css'
 
-const Option = (props) => <option className="option" {...props} />;
+const Option = (props) => <option className={styles.option} {...props} />;
 
 export default Option;

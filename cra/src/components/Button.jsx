@@ -1,13 +1,13 @@
 import React from "react";
-import "./Button.css";
-import { ThemeContext } from "../App";
+import styles from "./Button.module.css";
+import { useTheme } from "../ThemeProvider";
 
 const Button = ({ children, ...props }) => {
-  const isDark = React.useContext(ThemeContext);
+  const { theme } = useTheme();
 
   return (
-    <button className="button" {...props}>
-      {children} {isDark ? "🌜" : "🌝"}
+    <button className={styles.button} {...props}>
+      {children} {theme === 'dark' ? "🌜" : "🌝"}
     </button>
   );
 };
