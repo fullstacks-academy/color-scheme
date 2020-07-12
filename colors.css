@@ -19,6 +19,10 @@
   color: inherit;
 }
 
+.option {
+  background-color: var(--bg-level-1);
+}
+
 .button {
   color: var(--button-fg);
   background-color: var(--button-bg);
